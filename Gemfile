@@ -1,3 +1,4 @@
+ruby "2.4.4"
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -39,6 +40,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-rails', '~> 3.7'
 end
 
 group :development do
