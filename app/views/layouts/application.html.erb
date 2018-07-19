@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Viajaporpoco</title>
+    <title>Viaja por poco</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="viajaporpoco">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
   </head>
 
   <body>
+
+
+    <!-- Navigation -->
+    <%= render 'layouts/navigation' %>
+
+    <!-- Masthead -->
+    <%= render 'layouts/header' %>
+
+
     <%= yield %>
+
+    <!-- Footer -->
+    <%= render 'layouts/footer' %>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Unete a nuestra comunidad y comienza a viajar por poco dinero</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="col-xs-12">
+              <form>
+                <div class="form-row">
+                  <div class="col-md-12">
+                    <input type="email" class="form-control form-control-lg" placeholder="Ingresa tu email...">
+                  </div>
+                  <div class="col-md-12">
+                    <br />
+                    <button type="submit" class="btn btn-block btn-lg btn-primary">Registrarme</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="col-xs-12">
+              <p>Al registrarte, aceptas los <a href="#">Términos de condiciones</a> y las <a href="">Políticas de privacidad</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>

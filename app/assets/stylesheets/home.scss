@@ -1,0 +1,52 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+header.masthead {
+  background: url(back/back1.jpg) no-repeat center center;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+.features-icons-icon i {
+  margin: 0 auto;
+  color: #03a9f4;
+}
+.call-to-action .overlay {
+  background-color: #FFF;
+}
+.call-to-action h2 {
+  color: #03a9f4;
+}
+.call-to-action p {
+  margin-top: 30px;
+  color: #666;
+}
+.call-to-action p a {
+  color: #03a9f4;
+}
+
+/* modal */
+.modal-content {
+  background-color: #03a9f4;
+  color: #FFF;
+}
+.modal-header {
+  border-bottom: 0;
+}
+.modal-footer {
+  border-top: 0;
+}
+.modal-footer p a {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: orange;
+    border-color: orange;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: orange;
+  border-color: orange;
+}
